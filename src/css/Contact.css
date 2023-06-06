@@ -1,0 +1,51 @@
+/* ==========================================
+    contact component css style
+============================================= */
+section.contact .content-left {
+    font-size: 14px;
+}
+
+section.contact .contact-left .address a,
+section.contact .contact-left .address p {
+    background-color: #ededed;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+section.contact .button {
+    background: var(--btn-secondary-color);
+}
+
+/* section.contact .button:hover {
+    box-shadow: var(--shadow-secondary);
+} */
+
+section.contact input,
+textarea {
+    width: 100%;
+    outline: 1px solid #E0E1E7;
+    border: none;
+    padding: 10px 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: var(--paragraph-color);
+}
+
+section.contact label {
+    margin: 12px 0;
+    color: var(--paragraph-color);
+}
+
+section.contact input:focus,
+textarea:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+section.contact form .button {
+    background: var(--btn-color);
+    color: white;
+}
+
+/* section.contact form .button:hover {
+    box-shadow: var(--shadow);
+} */

@@ -1,0 +1,13 @@
+/* ==========================================
+    hero component css style
+============================================= */
+
+section.hero {
+    background: url(../assets/bg-img.png);
+    padding: 200px 0 180px;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: var(--section-bg);
+}

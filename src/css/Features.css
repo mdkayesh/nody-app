@@ -1,0 +1,38 @@
+/* ==========================================
+    features component css style
+============================================= */
+section.features {
+    overflow: hidden;
+}
+
+section.features .img {
+    transition: all 1s;
+    opacity: 0;
+    transform: scale(1);
+}
+
+section.features .img.active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+section.features .features-content {
+    font-size: 15px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+section.features .features-content.active {
+    box-shadow: var(--navbar-shadow);
+}
+
+section.features .features-content h4 {
+    font-size: 18px;
+    color: var(--text-primary);
+    font-weight: 600;
+
+}
+
+section.features .features-content .link {
+    color: var(--primary-color) !important;
+}

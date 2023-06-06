@@ -1,0 +1,39 @@
+/* ==========================================
+    project component css style
+============================================= */
+section.project {
+    background-color: var(--section-bg);
+}
+
+section.project .project-box .img {
+    position: relative;
+    overflow: hidden;
+}
+
+section.project .project-box .img .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.529);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EEF8FA;
+    font-size: 35px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+section.project .project-box .img:hover .project-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section.project .project-box h4 {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 18px;
+}

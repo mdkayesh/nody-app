@@ -1,0 +1,47 @@
+/* ==========================================
+    footer component css style
+============================================= */
+
+footer {
+    background: url(../assets/bg-img.png);
+    background-size: cover;
+    background-position: 50%;
+    padding: 50px;
+    background-color: var(--footer-bg);
+}
+
+footer .logo img {
+    width: 160px;
+    margin: 15px 0;
+}
+
+footer ul li a {
+    transition: all 0.5s;
+    position: relative;
+}
+
+footer ul li a::before {
+    content: '';
+    position: absolute;
+    background-color: var(--link-color);
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+footer ul li a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+footer ul li a:hover::before {
+    width: 80%;
+    margin-left: 5px;
+    background-color: white;
+}
+
+footer ul li {
+    margin-top: 10px;
+}

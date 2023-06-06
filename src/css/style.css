@@ -1,0 +1,104 @@
+/* ========================================
+    global css style
+=========================================== */
+:root {
+    --primary-color: #3956DE;
+    --section-bg: #FBFBFD;
+
+    /* colors for buttons */
+
+    --btn-color: linear-gradient(90deg, #3956de, #3964e4, #3c72e9, #437eed, #4d8bf0);
+    --btn-secondary-color: #44DABF;
+    --shadow: 0 4px 20px rgba(57 86 222 0.15);
+    --shadow-secondary: 0 3px 10px rgb(45 214 183 / 50%);
+    --navbar-shadow: 0 0 10px 0 rgb(0 0 0 / 6%);
+    /* colors for text */
+    --text-primary: #343A40;
+    --paragraph-color: #9b9bae;
+    --link-color: #9b9bae;
+
+    /* footer color */
+
+    --footer-bg: #292d32;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-primary);
+    /* overflow-x: hidden; */
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    color: var(--paragraph-color) !important;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+i {
+    margin: 0 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+section {
+    padding: 80px 0 80px;
+    position: relative;
+    width: 100%;
+}
+
+/* button component css style  */
+
+.button {
+    background: var(--btn-color);
+    padding: 14px 25px;
+    color: white !important;
+    display: inline-block;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+/* .button:hover {
+    box-shadow: var(--shadow);
+    color: white;
+    transform: translateY(-5px);
+} */
+
+.heading {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    margin-bottom: 3rem;
+}
+
+.heading h2 {
+    font-size: 2rem;
+}

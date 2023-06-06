@@ -1,0 +1,164 @@
+/* ==========================================
+    navbar component css style
+============================================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+}
+
+header.scroll {
+    box-shadow: var(--navbar-shadow);
+    background-color: #FBFBFD;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    padding: 18px 0;
+
+}
+
+header nav .container {
+    display: flex;
+}
+
+header nav .logo {
+    overflow: hidden;
+    width: 10%;
+    height: 28px;
+    width: 106px;
+}
+
+header nav .logo a img {
+    width: 100%;
+    height: 100%;
+}
+
+header .navbar-nav {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .navbar-nav ul {
+    display: flex;
+    margin-bottom: 0;
+}
+
+header .navbar-nav ul li a {
+    display: block;
+    margin: 0 17px;
+    font-size: 15px;
+    padding: 8px 0;
+    transition: 0.4s;
+}
+
+header.scroll .navbar-nav ul li a {
+    padding: 0;
+}
+
+header .navbar-nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+header nav .social-area i {
+    margin-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+header nav .social-area i:hover {
+    color: var(--primary-color);
+}
+
+header nav .menu {
+    display: none;
+}
+
+/* ==========================================
+    responsive navbar component css style
+============================================= */
+
+
+@media only screen and (max-width: 991px) {
+    header nav .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    header nav .container {
+        justify-content: space-between;
+    }
+
+    header .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: rgba(57, 87, 222, 0.973); */
+        background: linear-gradient(45deg, #3957dedf, #3964e4e7, #3c73e9ea, #437eede8, #4d8bf0f2);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        align-items: flex-start;
+        padding: 20px 30px;
+        overflow: hidden;
+        max-height: 700px;
+    }
+
+    header .navbar-nav.show {
+        padding: 20px 30px;
+    }
+
+    header .navbar-nav ul {
+        flex-direction: column;
+    }
+
+    header .navbar-nav ul li a {
+        padding: 10px 0 !important;
+        position: relative;
+        color: #d3d3d3;
+    }
+
+    header .navbar-nav ul li a::before {
+        content: '';
+        position: absolute;
+        background-color: var(--link-color);
+        bottom: 5px;
+        height: 2px;
+        width: 0;
+        left: 0;
+        transition: 0.5s;
+    }
+
+    header .navbar-nav ul li a:hover {
+        color: white;
+        padding-left: 5px !important;
+    }
+
+    header .navbar-nav ul li a:hover::before {
+        width: 80%;
+        margin-left: 5px;
+        background-color: white;
+    }
+
+    header nav .social-area {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    header nav .social-area i {
+        color: #d3d3d3;
+    }
+
+    header nav .social-area i:hover {
+        color: white;
+    }
+}

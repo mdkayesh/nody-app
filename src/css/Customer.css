@@ -1,0 +1,115 @@
+/* ==========================================
+    slider customer component css style
+============================================= */
+section.customer .slider {
+    width: 100%;
+    position: relative;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+section.customer .item-container {
+    display: flex;
+    justify-content: row;
+    width: calc(33.33% * 6);
+    transition: 0.5s;
+}
+
+section.customer .slider-item {
+    width: 33.33%;
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+section.customer .slider-item.active {
+    transform: scale(1.1);
+}
+
+section.customer .slider-item .img img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+section.customer .slider-img img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+section.customer .slider-item .content {
+    padding: 15px;
+    box-shadow: var(--navbar-shadow);
+    margin-bottom: 30px;
+}
+
+section.customer .slider-item h5 {
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+section.customer .slider .dot {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 22;
+    display: flex;
+
+}
+
+section.customer .slider .dot div {
+    background-color: white;
+    padding: 4px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+section.customer .slider .dot div:hover {
+    outline: 1px solid var(--primary-color);
+}
+
+section.customer .slider .dot div.active {
+    outline: 1px solid var(--primary-color);
+}
+
+section.customer .slider .dot div.active span {
+    background-color: var(--primary-color);
+}
+
+section.customer .slider .dot div:hover span {
+    background-color: var(--primary-color);
+}
+
+section.customer .slider .dot div span {
+    display: block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #B0BBF2;
+}
+
+@media screen and (max-width: 768px) {
+    section.customer .item-container {
+        width: calc(50% * 6);
+    }
+
+    section.customer .slider-item {
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    section.customer .item-container {
+        width: calc(100% * 6);
+    }
+
+    section.customer .slider-item {
+        width: 100%;
+    }
+
+
+}

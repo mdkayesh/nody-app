@@ -1,0 +1,23 @@
+/* ==========================================
+    news component css style
+============================================= */
+
+section.news {
+    font-size: 15px;
+    background-color: var(--section-bg);
+    overflow: hidden;
+}
+
+section.news .img {
+    padding: 5px 8px;
+}
+
+section.news .img img {
+    border-radius: 5px;
+}
+
+section.news .news-content h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+}

@@ -1,0 +1,45 @@
+/* ==========================================
+    services component css style
+============================================= */
+
+section.services {
+    background-color: var(--section-bg);
+}
+
+section.services h4 {
+    padding: 20px 0 10px;
+    font-size: 18px;
+}
+
+section.services i {
+    margin: 0 5px;
+}
+
+section.services .img {
+    width: 120px;
+    margin: auto;
+    background-color: #F1F3FD;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+section.services .service-box {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 5px 10px #F1F3FD;
+    transition: 0.4s;
+}
+
+section.services .service-box:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+section.services .service-box:hover a {
+    color: white;
+}
+
+section.services .service-box:hover .img {
+    background-color: #3964e4;
+}
